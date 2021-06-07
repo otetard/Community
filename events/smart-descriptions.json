@@ -1,4 +1,12 @@
 {
+  " retarus email security": [{
+    "value": "{retarus.sender} sent an e-mail to {retarus.recipient} (status: {retarus.status})",
+    "conditions": [
+      {"field": "retarus.class", "value": "EVENT"},
+      {"field": "retarus.type", "value": "MTA"}
+     ]
+  }
+  ],
   "harfanglab": [{
       "value": "Hostname: {host.hostname} - Source: {event.provider} - EventID: {event.code}",
       "conditions": [{
